@@ -100,15 +100,13 @@ const listOfPages = [
     //Array.from(document.querySelector("h3.mw-header:has(> a#Unique) ~ table").querySelectorAll("td.inventory-image a img"))
     'https://oldschool.runescape.wiki/w/Zalcano',
     //Array.from(document.querySelector("h3.mw-header:has(> a#Tertiary) ~ table").querySelectorAll("td.inventory-image a img"))
-    'https://oldschool.runescape.wiki/w/Zulrah'
+    'https://oldschool.runescape.wiki/w/Zulrah',
     //Array.from(document.querySelector("h3.mw-header:has(> a#Uniques) ~ table").querySelectorAll("td.inventory-image a img"))
     //Array.from(document.querySelector("h3.mw-header:has(> a#Tertiary) ~ table").querySelectorAll("td.inventory-image a img"))
     //Array.from(document.querySelector("h3.mw-header:has(> a#Mutagens) ~ table").querySelectorAll("td.inventory-image a img"))
+    'https://oldschool.runescape.wiki/w/Boss'
+    //Array.from(document.querySelector("h3.mw-header:has(> a#Wilderness_bosses) ~ table").querySelectorAll("span.plink-template a img"))
 ]
-
-//Wilderness Bosses
-//Array.from(document.querySelector("h3.mw-header:has(> a#Wilderness_bosses) ~ table").querySelectorAll("span.plink-template a img"))
-
 
 //Test URL
 // const scrapeUrl = 'https://oldschool.runescape.wiki/w/Zulrah';
@@ -291,6 +289,23 @@ const scrapePage = async (scrapeUrl) => {
           Array.from(
             document.querySelector("h3.mw-header:has(> a#Pre-roll) ~ table")
             .querySelectorAll("td.inventory-image a img")
+          ).map(
+            ele => ele.currentSrc
+          );
+        
+        for (let i = 0; i < images.length; i++) {
+          result.push(images[i]);
+        }
+      };
+
+      //If there exists a <table> on the page following a <h3 class=mw-header> which has a child <a id=Wilderness_bosses>
+      //Grab the currentSrc from all <img> with a parent of <a> with a parent of <td class=inventory-image>
+      //from that <table>. Append all elements to result.
+      if (document.querySelector("h3.mw-header:has(> a#Wilderness_bosses) ~ table")) {
+        const images = 
+          Array.from(
+            document.querySelector("h3.mw-header:has(> a#Wilderness_bosses) ~ table")
+            .querySelectorAll("span.plink-template a img")
           ).map(
             ele => ele.currentSrc
           );
