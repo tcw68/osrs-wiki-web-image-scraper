@@ -1,0 +1,317 @@
+{
+    "bosses": [
+        {
+            "name": "Abbysal Sire",
+            "webpage": "https:oldschool.runescape.wiki/w/Unsired",
+            "selectors": [
+                ["", "table.wikitable.align-center-1 span.plinkt-template a"]
+            ]
+        },
+        {
+            "name": "Alchemical Hydra",
+            "webpage": "https:oldschool.runescape.wiki/w/Alchemical_Hydra",
+            "selectors": [
+                ["h3.mw-header:has(> a#Pre-roll) ~ table", "td.inventory-image a"],
+                ["h3.mw-header:has(> a#Tertiary) ~ table", "td.inventory-image a"]
+            ]
+        },
+        {
+            "name": "Barrows",
+            "webpage": "https:oldschool.runescape.wiki/w/Chest_(Barrows)",
+            "selectors": [
+                ["h4.mw-header:has(> a#Ahrim\\'s) ~ table", "td.inventory-image a"],
+                ["h4.mw-header:has(> a#Dharok\\'s) ~ table", "td.inventory-image a"],
+                ["h4.mw-header:has(> a#Guthan\\'s) ~ table", "td.inventory-image a"],
+                ["h4.mw-header:has(> a#Karil\\'s) ~ table", "td.inventory-image a"],
+                ["h4.mw-header:has(> a#Torag\\'s) ~ table", "td.inventory-image a"],
+                ["h4.mw-header:has(> a#Verac\\'s) ~ table", "td.inventory-image a"]
+            ]
+        },
+        {
+            "name": "Callisto",
+            "webpage": "https:oldschool.runescape.wiki/w/Callisto",
+            "selectors": [
+                ["h3.mw-header:has(> a#Tertiary) ~ table", "td.inventory-image a"]
+            ]
+        },
+        {
+            "name": "Cerberus",
+            "webpage": "https:oldschool.runescape.wiki/w/Cerberus",
+            "selectors": [
+                ["h3.mw-header:has(> a#Uniques) ~ table", "td.inventory-image a"],
+                ["h3.mw-header:has(> a#Tertiary) ~ table", "td.inventory-image a"]
+            ]
+        },
+        {
+            "name": "Chambers of Xeric",
+            "webpage": "https:oldschool.runescape.wiki/w/Ancient_chest#Opened",
+            "selectors": [
+                ["h3.mw-header:has(> a#Unique_drop_table) ~ table", "td.inventory-image a"]
+            ]
+        },
+        {
+            "name": "Chaos Elemental",
+            "webpage": "https:oldschool.runescape.wiki/w/Chaos_Elemental",
+            "selectors": [
+                ["h3.mw-header:has(> a#Tertiary) ~ table", "td.inventory-image a"]
+            ]
+        },
+        {
+            "name": "Chaos Fanatic",
+            "webpage": "https:oldschool.runescape.wiki/w/Chaos_Fanatic",
+            "selectors": [
+                ["h3.mw-header:has(> a#Tertiary) ~ table", "td.inventory-image a"]
+            ]
+        },
+        {
+            "name": "Commander Zilyana",
+            "webpage": "https:oldschool.runescape.wiki/w/Commander_Zilyana",
+            "selectors": [
+                ["h3.mw-header:has(> a#Uniques) ~ table", "td.inventory-image a"],
+                ["h3.mw-header:has(> a#Tertiary) ~ table", "td.inventory-image a"]
+            ]
+        },
+        {
+            "name": "Corporeal Beast",
+            "webpage": "https:oldschool.runescape.wiki/w/Corporeal_Beast",
+            "selectors": [
+                ["h3.mw-header:has(> a#Other) ~ table", "td:has(a[title='Corporeal Beast']) ~ td span.plink-template a"],
+                ["h3.mw-header:has(> a#Tertiary) ~ table", "td.inventory-image a"]
+            ]
+        },        
+        {
+            "name": "Crazy Archaeologist",
+            "webpage": "https:oldschool.runescape.wiki/w/Crazy_archaeologist",
+            "selectors": [
+                ["h3.mw-header:has(> a#Tertiary) ~ table", "td.inventory-image a"]
+            ]
+        },
+        {
+            "name": "Dagannoth Prime",
+            "webpage": "https:oldschool.runescape.wiki/w/Dagannoth_Prime",
+            "selectors": [
+                ["h3.mw-header:has(> a#Other) ~ table", "td:has(a[title='Dagannoth Prime']) ~ td span.plink-template a"],
+                ["h3.mw-header:has(> a#Tertiary) ~ table", "td.inventory-image a"]
+            ]
+        },
+        {
+            "name": "Dagannoth Rex",
+            "webpage": "https:oldschool.runescape.wiki/w/Dagannoth_Rex",
+            "selectors": [
+                ["h3.mw-header:has(> a#Other) ~ table", "td:has(a[title='Dagannoth Rex']) ~ td span.plink-template a"],
+                ["h3.mw-header:has(> a#Tertiary) ~ table", "td.inventory-image a"]
+            ]
+        },
+        {
+            "name": "Dagannoth Supreme",
+            "webpage": "https:oldschool.runescape.wiki/w/Dagannoth_Supreme",
+            "selectors": [
+                ["h3.mw-header:has(> a#Other) ~ table", "td:has(a[title='Dagannoth Supreme']) ~ td span.plink-template a"],
+                ["h3.mw-header:has(> a#Tertiary) ~ table", "td.inventory-image a"]
+            ]
+        },
+        {
+            "name": "Gauntlet",
+            "webpage": "https:oldschool.runescape.wiki/w/Reward_Chest_(The_Gauntlet)",
+            "selectors": [
+                ["h4.mw-header:has(> a#Tertiary_2) ~ table", "td.inventory-image a"]
+            ]
+        },
+        {
+            "name": "General Graardor",
+            "webpage": "https:oldschool.runescape.wiki/w/General_Graardor",
+            "selectors": [
+                ["h3.mw-header:has(> a#Uniques) ~ table", "td.inventory-image a"],
+                ["h3.mw-header:has(> a#Tertiary) ~ table", "td.inventory-image a"]
+            ]
+        },
+        {
+            "name": "Giant Mole",
+            "webpage": "https:oldschool.runescape.wiki/w/Giant_Mole",
+            "selectors": [
+                ["h3.mw-header:has(> a#Tertiary) ~ table", "td.inventory-image a"]
+            ]
+        },
+        {
+            "name": "Grotesque Guardians",
+            "webpage": "https:oldschool.runescape.wiki/w/Grotesque_Guardians",
+            "selectors": [
+                ["h3.mw-header:has(> a#Uniques) ~ table", "td.inventory-image a"],
+                ["h3.mw-header:has(> a#Tertiary) ~ table", "td.inventory-image a"]
+            ]
+        },
+        {
+            "name": "Kalphite Queen",
+            "webpage": "https:oldschool.runescape.wiki/w/Kalphite_Queen",
+            "selectors": [
+                ["h3.mw-header:has(> a#Other) ~ table", "td:has(a[title='Kalphite Queen']) ~ td span.plink-template a"],
+                ["h3.mw-header:has(> a#Tertiary) ~ table", "td.inventory-image a"]
+            ]
+        },
+        {
+            "name": "King Black Dragon",
+            "webpage": "https:oldschool.runescape.wiki/w/King_Black_Dragon",
+            "selectors": [
+                ["h3.mw-header:has(> a#Tertiary) ~ table", "td.inventory-image a"]
+            ]
+        },
+        {
+            "name": "Kraken",
+            "webpage": "https:oldschool.runescape.wiki/w/Kraken#Kraken",
+            "selectors": [
+                ["h3.mw-header:has(> a#Slayer_bosses) ~ table", "td:has(a[title='Kraken']) ~ td span.plink-template a"],
+                ["h3.mw-header:has(> a#Tertiary) ~ table", "td.inventory-image a"]
+            ]
+        },
+        {
+            "name": "Kree'arra",
+            "webpage": "https:oldschool.runescape.wiki/w/Kree%27arra",
+            "selectors": [
+                ["h3.mw-header:has(> a#Uniques) ~ table", "td.inventory-image a"],
+                ["h3.mw-header:has(> a#Tertiary) ~ table", "td.inventory-image a"]
+            ]
+        },
+        {
+            "name": "K'ril Tsutsaroth",
+            "webpage": "https:oldschool.runescape.wiki/w/K%27ril_Tsutsaroth",
+            "selectors": [
+                ["h3.mw-header:has(> a#Uniques) ~ table", "td.inventory-image a"],
+                ["h3.mw-header:has(> a#Tertiary) ~ table", "td.inventory-image a"]
+            ]
+        },
+        {
+            "name": "Nex",
+            "webpage": "https:oldschool.runescape.wiki/w/Nex",
+            "selectors": [
+                ["h3.mw-header:has(> a#Uniques) ~ table", "td.inventory-image a"],
+                ["h3.mw-header:has(> a#Tertiary) ~ table", "td.inventory-image a"]
+            ]
+        },
+        {
+            "name": "Nightmare",
+            "webpage": "https:oldschool.runescape.wiki/w/Phosani%27s_Nightmare",
+            "selectors": [
+                ["h3.mw-header:has(> a#Uniques) ~ table", "td.inventory-image a"],
+                ["h3.mw-header:has(> a#Tertiary) ~ table", "td.inventory-image a"]
+            ]
+        },
+        {
+            "name": "Sarachnis",
+            "webpage": "https:oldschool.runescape.wiki/w/Sarachnis",
+            "selectors": [
+                ["h3.mw-header:has(> a#Pre-roll) ~ table", "td.inventory-image a"],
+                ["h3.mw-header:has(> a#Tertiary) ~ table", "td.inventory-image a"]
+            ]
+        },
+        {
+            "name": "Scorpia",
+            "webpage": "https:oldschool.runescape.wiki/w/Scorpia",
+            "selectors": [
+                ["h3.mw-header:has(> a#Tertiary) ~ table", "td.inventory-image a"]
+            ]
+        },
+        {
+            "name": "Tempeross",
+            "webpage": "https:oldschool.runescape.wiki/w/Tempoross",
+            "selectors": [
+                ["h3.mw-header:has(> a#Unique_Rewards) ~ table", "td.inventory-image a"]
+            ]
+        },
+        {
+            "name": "Theatre of Blood",
+            "webpage": "https:oldschool.runescape.wiki/w/Monumental_chest",
+            "selectors": [
+                ["h3.mw-header:has(> a#Pre-roll) ~ table", "td.inventory-image a"],
+                ["h3.mw-header:has(> a#Tertiary) ~ table", "td.inventory-image a"]
+            ]
+        },
+        {
+            "name": "Thermonuclear Smoke Devil",
+            "webpage": "https:oldschool.runescape.wiki/w/Thermonuclear_smoke_devil",
+            "selectors": [
+                ["h3.mw-header:has(> a#Slayer_bosses) ~ table", "td:has(a[title='Thermonuclear smoke devil']) ~ td span.plink-template a"],
+                ["h3.mw-header:has(> a#Tertiary) ~ table", "td.inventory-image a"]
+            ]
+        },
+        {
+            "name": "Tombs of Amascut",
+            "webpage": "https:oldschool.runescape.wiki/w/Chest_(Tombs_of_Amascut)#Opened",
+            "selectors": [
+                ["h3.mw-header:has(> a#Uniques_2) ~ table", "td.inventory-image a"],
+                ["h3.mw-header:has(> a#Tertiary) ~ table", "td.inventory-image a"]
+            ]
+        },
+        {
+            "name": "Venenatis",
+            "webpage": "https:oldschool.runescape.wiki/w/Venenatis",
+            "selectors": [
+                ["h3.mw-header:has(> a#Tertiary) ~ table", "td.inventory-image a"]
+            ]
+        },
+        {
+            "name": "Vetion",
+            "webpage": "https:oldschool.runescape.wiki/w/Vet%27ion",
+            "selectors": [
+                ["h3.mw-header:has(> a#Tertiary) ~ table", "td.inventory-image a"]
+            ]
+        },
+        {
+            "name": "Vorkath",
+            "webpage": "https:oldschool.runescape.wiki/w/Vorkath",
+            "selectors": [
+                ["h3.mw-header:has(> a#Tertiary) ~ table", "td.inventory-image a"]
+            ]
+        },
+        {
+            "name": "Wilderness Bosses",
+            "webpage": "https:oldschool.runescape.wiki/w/Boss",
+            "selectors": [
+                ["h3.mw-header:has(> a#Wilderness_bosses) ~ table", "td.inventory-image a"]
+            ]
+        },
+        {
+            "name": "Wintertodt",
+            "webpage": "https:oldschool.runescape.wiki/w/Supply_crate",
+            "selectors": [
+                ["h3.mw-header:has(> a#Unique) ~ table", "td.inventory-image a"]
+            ]
+        },
+        {
+            "name": "Zalcano",
+            "webpage": "https:oldschool.runescape.wiki/w/Zalcano",
+            "selectors": [
+                ["h3.mw-header:has(> a#Tertiary) ~ table", "td.inventory-image a"]
+            ]
+        },
+        {
+            "name": "Zulrah",
+            "webpage": "https:oldschool.runescape.wiki/w/Zulrah",
+            "selectors": [
+                ["h3.mw-header:has(> a#Uniques) ~ table", "td.inventory-image a"],
+                ["h3.mw-header:has(> a#Tertiary) ~ table", "td.inventory-image a"],
+                ["h3.mw-header:has(> a#Mutagens) ~ table", "td.inventory-image a"]
+            ]
+        }
+    ],
+    "ignore": [
+        "https://oldschool.runescape.wiki/w/Brimstone_key",
+        "https://oldschool.runescape.wiki/w/Curved_bone",
+        "https://oldschool.runescape.wiki/w/Long_bone",
+        "https://oldschool.runescape.wiki/w/Looting_bag",
+        "https://oldschool.runescape.wiki/w/Cabbage",
+        "https://oldschool.runescape.wiki/w/Message_(Theatre_of_Blood)",
+        "https://oldschool.runescape.wiki/w/Spirit_flakes",
+        "https://oldschool.runescape.wiki/w/Casket_(Reward_pool)",
+        "https://oldschool.runescape.wiki/w/Ensouled_scorpion_head",
+        "https://oldschool.runescape.wiki/w/Tattered_moon_page",
+        "https://oldschool.runescape.wiki/w/Tattered_sun_page",
+        "https://oldschool.runescape.wiki/w/Tattered_temple_page",
+        "https://oldschool.runescape.wiki/w/Grubby_key",
+        "https://oldschool.runescape.wiki/w/Dragon_med_helm",
+        "https://oldschool.runescape.wiki/w/Key_(elite)",
+        "https://oldschool.runescape.wiki/w/Kq_head_(tattered)",
+        "https://oldschool.runescape.wiki/w/Ensouled_kalphite_head",
+        "https://oldschool.runescape.wiki/w/Ensouled_dagannoth_head",
+        "https://oldschool.runescape.wiki/w/Ensouled_hellhound_head"
+    ]
+}
