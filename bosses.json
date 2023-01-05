@@ -53,7 +53,7 @@
             "name": "Chaos Elemental",
             "webpage": "https:oldschool.runescape.wiki/w/Chaos_Elemental",
             "selectors": [
-                ["h3.mw-header:has(> a#Tertiary) ~ table", "td.inventory-image a"]
+                ["h4.mw-header:has(> a#Tertiary) ~ table", "td.inventory-image a"]
             ]
         },
         {
@@ -75,7 +75,6 @@
             "name": "Corporeal Beast",
             "webpage": "https:oldschool.runescape.wiki/w/Corporeal_Beast",
             "selectors": [
-                ["h3.mw-header:has(> a#Other) ~ table", "td:has(a[title='Corporeal Beast']) ~ td span.plink-template a"],
                 ["h3.mw-header:has(> a#Tertiary) ~ table", "td.inventory-image a"]
             ]
         },        
@@ -90,7 +89,6 @@
             "name": "Dagannoth Prime",
             "webpage": "https:oldschool.runescape.wiki/w/Dagannoth_Prime",
             "selectors": [
-                ["h3.mw-header:has(> a#Other) ~ table", "td:has(a[title='Dagannoth Prime']) ~ td span.plink-template a"],
                 ["h3.mw-header:has(> a#Tertiary) ~ table", "td.inventory-image a"]
             ]
         },
@@ -98,7 +96,6 @@
             "name": "Dagannoth Rex",
             "webpage": "https:oldschool.runescape.wiki/w/Dagannoth_Rex",
             "selectors": [
-                ["h3.mw-header:has(> a#Other) ~ table", "td:has(a[title='Dagannoth Rex']) ~ td span.plink-template a"],
                 ["h3.mw-header:has(> a#Tertiary) ~ table", "td.inventory-image a"]
             ]
         },
@@ -106,7 +103,6 @@
             "name": "Dagannoth Supreme",
             "webpage": "https:oldschool.runescape.wiki/w/Dagannoth_Supreme",
             "selectors": [
-                ["h3.mw-header:has(> a#Other) ~ table", "td:has(a[title='Dagannoth Supreme']) ~ td span.plink-template a"],
                 ["h3.mw-header:has(> a#Tertiary) ~ table", "td.inventory-image a"]
             ]
         },
@@ -136,7 +132,7 @@
             "name": "Grotesque Guardians",
             "webpage": "https:oldschool.runescape.wiki/w/Grotesque_Guardians",
             "selectors": [
-                ["h3.mw-header:has(> a#Uniques) ~ table", "td.inventory-image a"],
+                ["h3.mw-header:has(> a#Unique) ~ table", "td.inventory-image a"],
                 ["h3.mw-header:has(> a#Tertiary) ~ table", "td.inventory-image a"]
             ]
         },
@@ -144,7 +140,6 @@
             "name": "Kalphite Queen",
             "webpage": "https:oldschool.runescape.wiki/w/Kalphite_Queen",
             "selectors": [
-                ["h3.mw-header:has(> a#Other) ~ table", "td:has(a[title='Kalphite Queen']) ~ td span.plink-template a"],
                 ["h3.mw-header:has(> a#Tertiary) ~ table", "td.inventory-image a"]
             ]
         },
@@ -159,7 +154,6 @@
             "name": "Kraken",
             "webpage": "https:oldschool.runescape.wiki/w/Kraken#Kraken",
             "selectors": [
-                ["h3.mw-header:has(> a#Slayer_bosses) ~ table", "td:has(a[title='Kraken']) ~ td span.plink-template a"],
                 ["h3.mw-header:has(> a#Tertiary) ~ table", "td.inventory-image a"]
             ]
         },
@@ -222,14 +216,13 @@
             "webpage": "https:oldschool.runescape.wiki/w/Monumental_chest",
             "selectors": [
                 ["h3.mw-header:has(> a#Pre-roll) ~ table", "td.inventory-image a"],
-                ["h3.mw-header:has(> a#Tertiary) ~ table", "td.inventory-image a"]
+                ["h3.mw-header:has(> a#Tertiary_rewards) ~ table", "td.inventory-image a"]
             ]
         },
         {
             "name": "Thermonuclear Smoke Devil",
             "webpage": "https:oldschool.runescape.wiki/w/Thermonuclear_smoke_devil",
             "selectors": [
-                ["h3.mw-header:has(> a#Slayer_bosses) ~ table", "td:has(a[title='Thermonuclear smoke devil']) ~ td span.plink-template a"],
                 ["h3.mw-header:has(> a#Tertiary) ~ table", "td.inventory-image a"]
             ]
         },
@@ -238,7 +231,7 @@
             "webpage": "https:oldschool.runescape.wiki/w/Chest_(Tombs_of_Amascut)#Opened",
             "selectors": [
                 ["h3.mw-header:has(> a#Uniques_2) ~ table", "td.inventory-image a"],
-                ["h3.mw-header:has(> a#Tertiary) ~ table", "td.inventory-image a"]
+                ["h3.mw-header:has(> a#Tertiary_rewards_2) ~ table", "td.inventory-image a"]
             ]
         },
         {
@@ -263,10 +256,17 @@
             ]
         },
         {
-            "name": "Wilderness Bosses",
+            "name": "Wilderness & Slayer Bosses",
             "webpage": "https:oldschool.runescape.wiki/w/Boss",
             "selectors": [
-                ["h3.mw-header:has(> a#Wilderness_bosses) ~ table", "td.inventory-image a"]
+                ["h3.mw-header:has(> a#Wilderness_bosses) ~ table", "td.inventory-image a"],
+                ["h3.mw-header:has(> a#Slayer_bosses) ~ table", "td:has(a[title='Kraken']) ~ td span.plink-template a"],
+                ["h3.mw-header:has(> a#Slayer_bosses) ~ table", "td:has(a[title='Thermonuclear smoke devil']) ~ td span.plink-template a"],
+                ["h3.mw-header:has(> a#Other) ~ table", "td:has(a[title='Kalphite Queen']) ~ td span.plink-template a"],
+                ["h3.mw-header:has(> a#Other) ~ table", "td:has(a[title='Dagannoth Supreme']) ~ td span.plink-template a"],
+                ["h3.mw-header:has(> a#Other) ~ table", "td:has(a[title='Dagannoth Rex']) ~ td span.plink-template a"],
+                ["h3.mw-header:has(> a#Other) ~ table", "td:has(a[title='Dagannoth Prime']) ~ td span.plink-template a"],
+                ["h3.mw-header:has(> a#Other) ~ table", "td:has(a[title='Corporeal Beast']) ~ td span.plink-template a"]
             ]
         },
         {
@@ -312,6 +312,7 @@
         "https://oldschool.runescape.wiki/w/Kq_head_(tattered)",
         "https://oldschool.runescape.wiki/w/Ensouled_kalphite_head",
         "https://oldschool.runescape.wiki/w/Ensouled_dagannoth_head",
-        "https://oldschool.runescape.wiki/w/Ensouled_hellhound_head"
+        "https://oldschool.runescape.wiki/w/Ensouled_hellhound_head",
+        "https://oldschool.runescape.wiki/w/Fossilised_dung"
     ]
 }

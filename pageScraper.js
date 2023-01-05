@@ -4,13 +4,12 @@ const axios = require('axios').default;
 const json = require('./bosses.json');
 const downloaded = new Set();
 
-//Fix = ToA, Thermi, ToB, Kraken, GG, Chaos Elemental
-
 //Given a URL, i.e. https://oldschool.runescape.wiki/images/Phoenix.png?fe846, sends a GET request via axios to download the data for the image.
 //Saves the data to param filePath
 const download = async (imageURL, filePath) => {
     try {
         if (downloaded.has(imageURL)) {
+            console.log("Already downloaded image => : ", imageURL.split('_')[0]);
             return
         } else {
             const response = await axios({
@@ -21,7 +20,7 @@ const download = async (imageURL, filePath) => {
     
             const w = response.data.pipe(fs.createWriteStream(filePath));
             w.on('finish', () => {
-                //console.log('Successfully downloaded ' + filePath);
+                console.log('Successfully downloaded ' + filePath);
             });
             downloaded.add(imageURL);
         }
@@ -44,7 +43,7 @@ const waitTillHTMLRendered = async (page, timeout = 30000, checkDuration = 1000,
   
         let bodyHTMLSize = await page.evaluate(() => document.body.innerHTML.length);
   
-        //console.log('last: ', lastHTMLSize, ' <> curr: ', currentHTMLSize, " body html size: ", bodyHTMLSize);
+        console.log('last: ', lastHTMLSize, ' <> curr: ', currentHTMLSize, " body html size: ", bodyHTMLSize);
   
         if(lastHTMLSize != 0 && currentHTMLSize == lastHTMLSize) {
             countStableSizeIterations++;
@@ -73,7 +72,7 @@ const scraperObject = {
                 'waitUntil': 'load',
             })
             .catch((err) => console.log(`Error loading URL ${url} => : `, err));
-        await waitTillHTMLRendered(page);
+        await waitTillHTMLRendered(page, 30000, 500, 3);
 
         let dropUrls = [];
 
@@ -93,7 +92,6 @@ const scraperObject = {
         }
 
         let pagePromise = (link) => new Promise(async(resolve, reject) => {
-            console.log(link);
             let newPage = await browser.newPage();
             await newPage
                 .goto(link, {
@@ -114,14 +112,14 @@ const scraperObject = {
                     .catch((err) => console.log(`Error loading URL ${imageLink} => : `, err));
 
                 let imageSelector = 'div.fullImageLink a img';
-                let downloadLink = await newPage.$eval(imageSelector, img => img.src);
-                let fileName = await newPage.$eval(imageSelector, img => img.alt)
-                fileName = fileName.split(':').pop();
-                let filePath = path.resolve(downloadDirectory, fileName);
-                if (!(ignore.includes(downloadLink))) {
+                if (!(ignore.includes(link))) {
+                    let downloadLink = await newPage.$eval(imageSelector, img => img.src);
+                    let fileName = await newPage.$eval(imageSelector, img => img.alt)
+                    fileName = fileName.split(':').pop();
+                    let filePath = path.resolve(downloadDirectory, fileName);
                     download(downloadLink, filePath);
                 }
-                resolve(imageLink);
+                resolve();
                 await newPage.close();
             } catch (err) {
                 console.log("Error downloading image => : ", err);
